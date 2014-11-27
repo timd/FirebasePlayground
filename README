@@ -1,0 +1,12 @@
+*FirebasePlayground*
+
+Being a minimum viable iOS app that talks to Firebase.
+
+How to use:
+
+1. Clone this repo.
+2. Run `pod install` to install the Firebase CocoaPod
+3. Sign up at Firebase.com and get an app URL
+4. Update ViewController.m with the app URL
+5. Run the app.
+
