@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkI-qE-66s" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD3-He-yLG">
+                                        <rect key="frame" x="20" y="135" width="108" height="30"/>
+                                        <state key="normal" title="Send to bottom">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSendToBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucp-hQ-Rky"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71226208976819727" green="1" blue="0.83196567042356739" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tD3-He-yLG" firstAttribute="leading" secondItem="mkI-qE-66s" secondAttribute="leading" constant="20" id="EXa-54-ETP"/>
+                                    <constraint firstAttribute="centerY" secondItem="tD3-He-yLG" secondAttribute="centerY" id="Q8X-4p-Swc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-mK-2Z2" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-uj-yYI">
+                                        <rect key="frame" x="20" y="135" width="81" height="30"/>
+                                        <state key="normal" title="Send to top">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSendToTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="viO-6I-JAK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wFi-uj-yYI" firstAttribute="leading" secondItem="YaE-mK-2Z2" secondAttribute="leading" constant="20" id="a1s-PC-EUX"/>
+                                    <constraint firstAttribute="centerY" secondItem="wFi-uj-yYI" secondAttribute="centerY" id="y5F-xw-F9b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mkI-qE-66s" secondAttribute="trailing" id="0Tf-6n-Xf6"/>
+                            <constraint firstItem="mkI-qE-66s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EQ6-IJ-fbO"/>
+                            <constraint firstAttribute="bottom" secondItem="YaE-mK-2Z2" secondAttribute="bottom" id="WSp-eU-eWp"/>
+                            <constraint firstAttribute="trailing" secondItem="YaE-mK-2Z2" secondAttribute="trailing" id="a6g-mH-LhD"/>
+                            <constraint firstItem="YaE-mK-2Z2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a6x-nz-n6q"/>
+                            <constraint firstItem="YaE-mK-2Z2" firstAttribute="height" secondItem="mkI-qE-66s" secondAttribute="height" id="eom-Za-BDH"/>
+                            <constraint firstItem="mkI-qE-66s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s3E-Zl-0eN"/>
+                            <constraint firstAttribute="bottom" secondItem="mkI-qE-66s" secondAttribute="bottom" constant="300" id="siv-o7-hmx"/>
+                            <constraint firstItem="YaE-mK-2Z2" firstAttribute="top" secondItem="mkI-qE-66s" secondAttribute="bottom" id="srS-7l-8bp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="siv-o7-hmx"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="YaE-mK-2Z2" id="TX5-kO-hox"/>
+                        <outlet property="topView" destination="mkI-qE-66s" id="5aw-nU-Ql4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
