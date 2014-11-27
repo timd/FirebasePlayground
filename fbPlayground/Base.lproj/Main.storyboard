@@ -20,39 +20,73 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD3-He-yLG">
-                                        <rect key="frame" x="20" y="135" width="108" height="30"/>
-                                        <state key="normal" title="Send to bottom">
+                                        <rect key="frame" x="245" y="262" width="111" height="30"/>
+                                        <state key="normal" title="Ping the bottom">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="didTapSendToBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucp-hQ-Rky"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The bottom is pinging the top!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgm-qC-7PG">
+                                        <rect key="frame" x="185" y="139" width="231" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.71226208976819727" green="1" blue="0.83196567042356739" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="tD3-He-yLG" firstAttribute="leading" secondItem="mkI-qE-66s" secondAttribute="leading" constant="20" id="EXa-54-ETP"/>
+                                    <constraint firstAttribute="bottom" secondItem="tD3-He-yLG" secondAttribute="bottom" constant="8" id="3JQ-TQ-6iv"/>
+                                    <constraint firstAttribute="centerX" secondItem="wgm-qC-7PG" secondAttribute="centerX" id="FLA-be-h1l"/>
+                                    <constraint firstAttribute="centerX" secondItem="tD3-He-yLG" secondAttribute="centerX" id="H9l-jM-0gL"/>
+                                    <constraint firstItem="tD3-He-yLG" firstAttribute="centerX" secondItem="wgm-qC-7PG" secondAttribute="centerX" id="IXz-uM-GfI"/>
                                     <constraint firstAttribute="centerY" secondItem="tD3-He-yLG" secondAttribute="centerY" id="Q8X-4p-Swc"/>
+                                    <constraint firstAttribute="centerY" secondItem="wgm-qC-7PG" secondAttribute="centerY" id="X0e-ey-Udg"/>
+                                    <constraint firstItem="tD3-He-yLG" firstAttribute="centerX" secondItem="mkI-qE-66s" secondAttribute="centerX" id="seu-df-7FH"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IXz-uM-GfI"/>
+                                        <exclude reference="Q8X-4p-Swc"/>
+                                        <exclude reference="seu-df-7FH"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaE-mK-2Z2" userLabel="Bottom View">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-uj-yYI">
-                                        <rect key="frame" x="20" y="135" width="81" height="30"/>
-                                        <state key="normal" title="Send to top">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-uj-yYI">
+                                        <rect key="frame" x="259" y="262" width="84" height="30"/>
+                                        <state key="normal" title="Ping the top">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="didTapSendToTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="viO-6I-JAK"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The top is pinging the bottom!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxf-it-Bi2">
+                                        <rect key="frame" x="185" y="139" width="231" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9137254901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wFi-uj-yYI" secondAttribute="bottom" constant="8" id="1Wm-cz-jte"/>
+                                    <constraint firstAttribute="centerX" secondItem="wFi-uj-yYI" secondAttribute="centerX" id="Rvt-tK-cBB"/>
+                                    <constraint firstAttribute="centerX" secondItem="Cxf-it-Bi2" secondAttribute="centerX" id="S4H-K6-nu9"/>
                                     <constraint firstItem="wFi-uj-yYI" firstAttribute="leading" secondItem="YaE-mK-2Z2" secondAttribute="leading" constant="20" id="a1s-PC-EUX"/>
+                                    <constraint firstAttribute="centerY" secondItem="Cxf-it-Bi2" secondAttribute="centerY" id="kYE-Rq-l0G"/>
                                     <constraint firstAttribute="centerY" secondItem="wFi-uj-yYI" secondAttribute="centerY" id="y5F-xw-F9b"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a1s-PC-EUX"/>
+                                        <exclude reference="y5F-xw-F9b"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -74,7 +108,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="bottomSpaceLabel" destination="Cxf-it-Bi2" id="wms-AJ-Ivi"/>
                         <outlet property="bottomView" destination="YaE-mK-2Z2" id="TX5-kO-hox"/>
+                        <outlet property="topSpaceLabel" destination="wgm-qC-7PG" id="xeh-lK-QS6"/>
                         <outlet property="topView" destination="mkI-qE-66s" id="5aw-nU-Ql4"/>
                     </connections>
                 </viewController>

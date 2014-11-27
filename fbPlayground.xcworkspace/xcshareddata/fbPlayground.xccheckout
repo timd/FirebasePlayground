@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8CB11D30-DBF3-4515-B04A-3CF24C7F5F17</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fbPlayground</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D07448591F03F973BA3F92B587ADD6E965DCD25</key>
+		<string>ssh://stash1.ops.expertcity.com:7999/g2asi/g2a-firebase-playground.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fbPlayground.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D07448591F03F973BA3F92B587ADD6E965DCD25</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://stash1.ops.expertcity.com:7999/g2asi/g2a-firebase-playground.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D07448591F03F973BA3F92B587ADD6E965DCD25</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D07448591F03F973BA3F92B587ADD6E965DCD25</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fbPlayground</string>
+		</dict>
+	</array>
+</dict>
+</plist>
